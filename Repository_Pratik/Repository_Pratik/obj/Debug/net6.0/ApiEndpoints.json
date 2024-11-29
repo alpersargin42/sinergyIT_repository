@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "Repository_Pratik.Controller.UrunController",
+    "Method": "GetUrunler",
+    "RelativePath": "api/Urun",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Repository_Pratik.Controller.UrunController",
+    "Method": "CreateUrun",
+    "RelativePath": "api/Urun",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "urunDto",
+        "Type": "Repository_Pratik.DTO.UrunDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Repository_Pratik.Controller.UrunController",
+    "Method": "GetUrunById",
+    "RelativePath": "api/Urun/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Repository_Pratik.Controller.UrunController",
+    "Method": "UpdateUrun",
+    "RelativePath": "api/Urun/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "urunDto",
+        "Type": "Repository_Pratik.DTO.UrunDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Repository_Pratik.Controller.UrunController",
+    "Method": "DeleteUrun",
+    "RelativePath": "api/Urun/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -78,3 +78,19 @@ https://www.youtube.com/watch?v=74cTFhRVnLs
 
 ### Proje uygulama videosu (Swagger CRUD): 
 https://www.youtube.com/watch?v=QaIwPw-C12o
+
+## Kaynakça:
+https://sefikcankanber.medium.com/saga-pattern-nedir-e4a447bef361
+https://www.gencayyildiz.com/blog/microservice-mimarilerde-saga-pattern-ile-transaction-yonetimi/#google_vignette
+https://www.gencayyildiz.com/blog/transact-sql-transaction/
+https://burakneis.com/saga-pattern-distributed-transaction-handling/
+https://ilaydakosar.com/microservice-mimarisinde-transaction-yonetimi-2pc-ve-saganin-karsilastirilmasi/
+https://learn.microsoft.com/tr-tr/dotnet/core/testing/unit-testing-with-dotnet-test
+https://www.gencayyildiz.com/blog/net-core-unit-test-nedir-nasil-yapilir-derinlemesine-inceleyelim/
+https://orhanrecep90.medium.com/test-nedir-nette-birim-testler-nasıl-yazılır-a1c137189fc8
+https://ismailkasan.medium.com/asp-nette-moq-kütüphanesi-ile-unit-test-yazımı-74a1b108b41d
+https://orhunbegendi.medium.com/moqnun-efektif-kullanimi-mock-framework-net-53edb0141b82
+https://medium.com/@e.karabudak7/net-core-ile-unit-test-xunit-eaf0d94edd71
+https://www.gencayyildiz.com/blog/c-repository-design-patternrepository-tasarim-deseni/
+https://medium.com/bilişim-hareketi/repository-ve-unit-of-work-tasarım-kalıbı-ve-uygulanması-9d471d617a9d
+https://www.turkhackteam.org/konular/teknik-konular-generic-repository-pattern-ve-entity-framework-ihan3t.1578697/

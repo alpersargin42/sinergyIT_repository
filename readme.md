@@ -10,9 +10,9 @@ Avantajları; iş akışını takip etmek kolaydır,hata yönetimini yapmak ve g
 Dezavantajları; merkezi birimden dolayı single point of failure riski oluşturabilir, mikroservis bağımsızlığını azaltabilir,süreç karmaşıklaşabilir çünkü merkez tüm süreci kontrol etmek zorundadır.
 
 # 4.1. SAGA Pattern Design and State Machine Diagram
-<img src="https://github.com/alpersargin42/sinergyIT_repository/blob/main/Image_1.png" width="750" height="512" />
+<img src="https://github.com/alpersargin42/sinergyIT_repository/blob/main/Image_1.png" width="800" height="512" />
 
-<img src="https://github.com/alpersargin42/sinergyIT_repository/blob/main/Image_2.png" width="750" height="512" />
+<img src="https://github.com/alpersargin42/sinergyIT_repository/blob/main/Image_2.png" width="800" height="512" />
 
 # 4.2. Her bir durumda, ilgili hizmetin başarılı ya da başarısız olması durumunda nasıl bir geçiş yapılacağını açıklayın.
 Sipariş servis çalıştığında sipariş oluşturma aşamasına geçilir.Kontrol merkezi ilk olarak sipariş oluşturulabiliyor mu kontrol eder eğer oluşturulamıyorsa sipariş oluşturulamadı mesajıyla tekrar merkeze döner.Eğer oluşturulabiliyorsa sipariş oluşturulabiliyor mesajıyla birlikte stok kanalına geçer stok kanalından dönen mesaj stokta ürün bulunamadı şeklindeyse yine siparişi iptal et aşamasına geçer.Stokta ürün varsa yine merkeze dönüp ürünü rezerv etme kanalına geçer,burada da aynı şekilde olumsuz bir durum varsa ürün rezervini kaldırıp siparişi iptal eder.Rezerv durumu olumluysa bakiye kontrol kanalına geçerek bakiyeyi kontrol eder.Bakiye yetersiz ise yetersiz bakiye mesajıyla birlikte ürün rezervini kaldırarak siparişi iptal eder.Eğer yeterli bakiye varsa ödeme işlemine gidilir.Ödeme işleminde bir aksaklık çıkarsa merkeze başarısız ödeme mesajıyla giderek ürün rezervini kaldırır ve siparişi iptal eder.Ödeme işlemi başarılıysa kargo teslim kanalına gidilir,kargo eslim kanalından olumsuz mesaj dönerse ödeme iade edilerek sipariş iptal edilir merkeze döner.Kargo işlemi başarılıysa sırasıyla hazırlık işlemi ve teslimat işlemi yapılarak sipariş tamamlanır ve merkeze olumlu mesaj döner.
